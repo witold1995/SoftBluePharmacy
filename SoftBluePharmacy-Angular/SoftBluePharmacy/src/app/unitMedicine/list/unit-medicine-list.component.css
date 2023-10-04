@@ -1,0 +1,18 @@
+.header-cell{
+    width: 250px;;
+    max-width: 250px;
+    min-width: 100px;
+    border-color: gray;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    text-align: center; 
+}
+
+.cell{
+    width: 250px;;
+    max-width: 250px;
+    min-width: 100px;
+    border-color: gray;
+    border-right-width: 1px;
+    text-align: center;
+}

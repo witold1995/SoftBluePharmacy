@@ -1,0 +1,12 @@
+<form [formGroup]="formGroup" (submit)="submit($event)"class = "form">
+    <label class="form-label">Nazwa: </label>
+    <input type="text" formControlName="name"/>
+    <br>
+    <label class="form-label">Producent: </label>
+    <input type="text" formControlName="manufacturer"/>
+    <br>    
+    <input type="checkbox" formControlName="otc"/>
+    <label class="form-label"> Lek dostępny bez recepty: </label>
+    <br>
+    <button mat-stroked-button color="primary" type="submit">Submit</button>
+</form>

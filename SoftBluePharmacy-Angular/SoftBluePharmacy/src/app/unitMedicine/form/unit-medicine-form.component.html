@@ -1,0 +1,17 @@
+<form [formGroup]="formGroup" (submit)="submit($event)">
+  <label class="form-label">Lek:</label>
+  <select matNativeControl required formControlName="medicineId">
+        <option *ngFor="let medicine of medicines" [value]="medicine.id">{{medicine.name}}</option>
+      </select>
+    <br>
+    <label class="form-label">Lokalizacja: </label>
+    <select matNativeControl required formControlName="unitId">
+        <option *ngFor="let unit of units" [value]="unit.id">{{unit.name}}</option>
+      </select>
+    <br>
+
+    <label class="form-label">Ilość: </label>
+    <input type="text" formControlName="amountAvailable"/>
+    <br>
+    <button mat-stroked-button color="primary" type="submit">Submit</button>
+</form>

@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <td class="header-cell">Lek</td>
+        <td class="header-cell">Oddział</td>
+        <td class="header-cell">Ilość</td>
+        <td class="header-cell">Akcje</td>
+    </tr>
+    <ng-container *ngFor="let entity of entities">
+        <tr>
+            <td class="cell">{{entity.medicine?.name}}</td>
+            <td class="cell">{{entity.unit?.name}}</td>
+            <td class="cell">{{entity.amountAvailable}}</td>
+            <td class="cell">
+                <button mat-stroked-button color="primary" (click)="select(entity)">Select</button>
+                <button mat-stroked-button color="warn" (click)="delete(entity.id)">Delete</button>
+            </td>
+        </tr>
+    </ng-container>
+</table>

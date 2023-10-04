@@ -1,0 +1,12 @@
+<div>
+    <app-medicine-form [entity]="selectedEntity" (onSubmit)="onSubmit($event)">
+    </app-medicine-form>
+    <button mat-stroked-button color="warn" (click)="clear()">Clear</button>
+</div>
+
+<div>
+    <app-medicine-list [entities]="entities" (onSelect)="select($event)" (onDelete)="onDelete($event)">
+        
+    </app-medicine-list>
+</div>
+

@@ -1,0 +1,9 @@
+<form [formGroup]="formGroup" (submit)="submit($event)">
+    <label class="form-label">Nazwa: </label>
+    <input type="text" formControlName="name"/>
+    <br>
+    <label class="form-label">Lokalizacja: </label>
+    <input type="text" formControlName="localization"/>
+    <br>
+    <button mat-stroked-button color="primary" type="submit">Submit</button>
+</form>

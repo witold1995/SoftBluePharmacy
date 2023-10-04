@@ -1,0 +1,12 @@
+<div>
+    <app-unit-form [entity]="selectedEntity" (onSubmit)="onSubmit($event)">
+    </app-unit-form>
+    <button mat-stroked-button color="warn" (click)="clear()">Clear</button>
+</div>
+
+<div>
+    <app-unit-list [entities]="entities" (onSelect)="select($event)" (onDelete)="onDelete($event)">
+        
+    </app-unit-list>
+</div>
+

@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <td class="header-cell">Nazwa Jednostki</td>
+        <td class="header-cell">Lokalizacja</td>
+        <td class="header-cell">Akcje</td>
+    </tr>
+    <ng-container *ngFor="let entity of entities">
+        <tr>
+            <td class="cell">{{entity.name}}</td>
+            <td class="cell">{{entity.localization}}</td>
+            <td class="cell">
+                <button mat-stroked-button color="primary" (click)="select(entity)">Select</button>
+                <button mat-stroked-button color="warn" (click)="delete(entity.id)">Delete</button>
+            </td>
+        </tr>
+    </ng-container>
+</table>

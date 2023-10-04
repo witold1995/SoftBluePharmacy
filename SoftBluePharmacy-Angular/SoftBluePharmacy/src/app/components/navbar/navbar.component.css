@@ -1,0 +1,30 @@
+.toolbar {
+    display: flex; /* or inline-flex */
+    color: primary;
+  }
+
+  
+  .banner{
+    order:0;
+    font-size: larger;
+    flex-grow:2;
+  }
+
+  .medicine{
+    order:1;
+    flex-grow:1;
+  }
+
+  .unit{
+    order:2;
+    flex-grow:1;
+  }
+
+  .unit-medicine{
+    order:3;
+    flex-grow:1;
+  }
+  .spacer{
+    order:4;
+    flex-grow:7;
+  }
