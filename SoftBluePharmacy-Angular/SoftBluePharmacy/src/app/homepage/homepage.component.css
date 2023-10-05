@@ -1,0 +1,13 @@
+* {
+    padding: 10px !important;
+    margin: 10px !important;
+ }
+
+ .buttons{
+    
+ }
+
+ .button{
+    width: 250px;
+    max-width: 250px;
+ }
