@@ -21,6 +21,7 @@ import { UnitMedicineComponent } from './unitMedicine/unit-medicine.component';
 import { UnitMedicineListComponent } from './unitMedicine/list/unit-medicine-list.component';
 import { UnitMedicineFormComponent } from './unitMedicine/form/unit-medicine-form.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     UnitMedicineComponent,
     UnitMedicineListComponent,
     UnitMedicineFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
